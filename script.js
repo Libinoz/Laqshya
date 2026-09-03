@@ -261,34 +261,6 @@ document.addEventListener('DOMContentLoaded', function () {
     startCountdown(); // Start the countdown on page load
     // ===== END: COUNTDOWN TIMER LOGIC =====
 
-    // ... existing code ...
-
-    // ===== START: BROCHURE POPUP LOGIC =====
-    const brochureModal = document.getElementById('brochure-modal');
-    const closeBrochureBtn = document.querySelector('.close-brochure');
-
-    // Check if elements exist to prevent errors
-    if (brochureModal && closeBrochureBtn) {
-
-        // Show the modal automatically when the page loads (with a small delay)
-        setTimeout(() => {
-            brochureModal.classList.add('show-brochure');
-        }, 1000); // 1000ms = 1 second delay
-
-        // Close when clicking the X button
-        closeBrochureBtn.addEventListener('click', () => {
-            brochureModal.classList.remove('show-brochure');
-        });
-
-        // Close when clicking outside the image (on the blurred background)
-        window.addEventListener('click', (e) => {
-            if (e.target === brochureModal) {
-                brochureModal.classList.remove('show-brochure');
-            }
-        });
-    }
-    // ===== END: BROCHURE POPUP LOGIC =====
-    
 }); // This is the end of your DOMContentLoaded
 // });
 

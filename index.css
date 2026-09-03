@@ -26,10 +26,13 @@ body {
     color: var(--text-color);
     overflow-x: hidden;
 
-    background-image: linear-gradient(rgba(10, 6, 6, 0.68), rgba(18, 11, 11, 0.8)), url(poker\ game.png);
+    /* --- BACKGROUND IMAGE (Assuming you still want it) --- */
+    background-image: linear-gradient(rgba(3, 8, 26, 0.6), rgba(3, 8, 26, 0.7)), url(cassi1.jpg);
+    /* Adjusted gradient colors */
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+    /* --- END UPDATE --- */
 }
 
 body::after {
@@ -56,7 +59,7 @@ body::after {
     top: 0;
     left: 0;
     width: 100%;
-    padding: 10px 0;
+    padding: 15px 15px;
     z-index: 1000;
     transition: background 0.3s ease, backdrop-filter 0.3s ease;
 }
@@ -73,12 +76,12 @@ body::after {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    min-height: 60px;
+    max-height: 30px;
 }
 
 .logo {
     font-family: var(--font-heading);
-    font-size: 2.5rem;
+    font-size: 2.8rem;
     color: var(--heading-color);
     text-decoration: none;
     line-height: 1;
@@ -88,11 +91,10 @@ body::after {
     list-style: none;
     display: flex;
     align-items: center;
-    gap: 24px;
 }
 
 .nav-links li {
-    margin-left: 0;
+    margin-left: 35px;
 }
 
 .nav-links a {
@@ -101,9 +103,6 @@ body::after {
     font-weight: 500;
     transition: color 0.3s;
     position: relative;
-    font-size: 1rem;
-    padding: 8px 0;
-    display: inline-block;
 }
 
 .nav-links a::after {
@@ -324,7 +323,7 @@ body::after {
 
 .info-image {
     width: 100%;
-    height: 100%;
+    height: 90%;
     /* Fills the stretched parent */
     overflow: hidden;
     /* Removed border and radius */
@@ -1873,15 +1872,15 @@ body::after {
 
 /* Registration Alert Bar */
 #registration-alert {
-    background: linear-gradient(90deg, #d4af37 0%, #1f1f1f 100%);
-    color: #fff8dc;
+    background: linear-gradient(90deg, #b92b27 0%, #1565C0 100%); /* Attention-grabbing gradient */
+    color: white;
     text-align: center;
     padding: 12px 20px;
-    position: fixed;
+    position: fixed; /* Sticks to the top */
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 10000;
+    z-index: 10000; /* Ensures it sits on top of your navbar */
     box-shadow: 0 4px 10px rgba(0,0,0,0.3);
     font-family: 'Inter', sans-serif;
     animation: slideDown 0.5s ease-out;
